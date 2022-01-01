@@ -1,0 +1,202 @@
+<html>
+
+<script type='text/javascript' src='../js/api.js'></script>
+
+<script type='text/javascript' src='../js/get_projectList.js'></script>
+
+<script type='text/javascript' src='../js/createProject.js'></script>
+
+<script type='text/javascript' src='../js/searchProject.js'></script>
+
+<script type='text/javascript' src='../js/addTask.js'></script>
+
+<script type='text/javascript' src='../js/addTeammate.js'></script>
+
+<script type='text/javascript' src='../js/get_tasksList.js'></script>
+
+<script type='text/javascript' src='../js/get_teammateList.js'></script>
+
+<script type='text/javascript' src='../js/removeTeammate.js'></script>
+
+<script type='text/javascript' src='../js/renameTask.js'></script>
+ 
+ <script type='text/javascript' src='../js/assignTeammate.js'></script>
+
+<body>
+
+<h1>Project View</h1>
+
+ 
+
+<div id="CreateNewProject"></div>
+
+ 
+
+ 
+
+<div>
+
+<form name="createForm" method="post">
+
+       Create New Project:
+
+  <input name="projectName" value="" />
+
+  <input type="button" value="Create"  onClick="JavaScript:handleCreateProjectClick(this)">
+
+</form>
+
+ 
+
+<form name="searchForm" method="get">
+
+       Search Project:
+
+       <input name="projectName" value="" />
+
+      
+
+ 
+
+
+<input type="button" value="Search" onClick="JavaScript:handleSearchProjectClick(this)">
+
+ 
+
+</form>
+
+</div>
+
+<h3> Project Loaded 
+
+<div id="showProject"></div> </h3>
+
+ 
+
+<!-- one project has loaded, all other views show -->
+
+<div id = "HasLoaded">
+
+<!-- worry about how to get which project you are editing later -->
+
+<div id = "name">Project View</div>
+
+ 
+
+</header>
+
+ 
+
+<body>
+
+<!-- addTask button  -->
+
+<form name="addTaskForm" method="post">
+
+       Create New Task:
+
+  <input name="taskName" value="" />
+
+  <input button type="button" value = "Add Task" onclick="JavaScript:handleAddTaskClick(this)"/>
+
+</form>      
+
+ 
+
+ 
+
+<!-- assignTeammate button -->
+
+<form name="addTeammateForm" method="post">
+
+       Assign Teammate:
+
+  <input name="teammateName" value="" />
+
+  <input button type="button" value = "Assign Teammate" onclick="JavaScript:handleAddTeammateClick(this)"/>
+
+</form>      
+
+ 
+
+ 
+
+<!-- unassignTeammate button -->
+
+<form name="removeTeammateForm" method="post">
+
+       Un-Assign Teammate:
+
+  <input name="teammateName" value="" />
+
+  <input button type="button" value = "Unassign Teammate" onclick="JavaScript:handleRemoveTeammateClick(this)"/>
+
+</form>
+
+
+
+<h1>Teammate List</h1>
+
+<div id="teammateList"></div>
+
+ 
+
+<h1>Task List</h1>
+
+ 
+
+<!-- markTask button  -->
+
+<button type="button" value = "Mark Task" onclick="">Mark Task</button>
+
+ 
+
+<!-- removeTask button -->
+
+<button type="button" value = "Remove Task" onclick="">Remove Task</button>
+
+ 
+
+<!-- renameTask button -->
+
+<button type="button" value = "Rename Task" onclick="">Rename Task</button>
+
+ 
+
+<!-- addSubtask button -->
+
+<button type="button" value = "Add Subtask" onclick="">Add Subtask</button>
+
+ 
+
+<!-- viewSubtask button -->
+
+<button type="button" value = "View Subtask" onclick="">View Subtask</button>
+
+ 
+
+<div id="taskList"></div>
+<
+
+ 
+
+<script type="text/javascript">
+
+function initialize() {
+
+   // get all projects
+
+   refreshTaskList();
+
+   refreshTeammateList();
+
+  
+
+}
+
+</script>
+
+</div>
+</body>
+
+</html>

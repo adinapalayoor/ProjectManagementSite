@@ -1,0 +1,21 @@
+<html>
+
+<script type='text/javascript' src='../js/api.js'></script>
+<script type='text/javascript' src='../js/get_projectList.js'></script>
+<script type='text/javascript' src='../js/createProject.js'></script>
+<script type='text/javascript' src='../js/deleteProject.js'></script>
+
+<header onload="initialize()">
+<div id = "name">Home - Administrator</div>
+<h1> Project List</h1>
+<script type="text/javascript">
+function initialize() {
+   // get all projects
+   refreshProjectsList();
+}
+</script>
+</header>
+
+<body onload="initialize()"/>
+<div id="projectList"></div>
+</html>
