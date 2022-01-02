@@ -1,5 +1,10 @@
 # ProjectManagementSite
+## Overview
 Built a project management site using Java, HTML and JavaScript and connected it all using AWS tools.
+
+## Back-end
+We used Java to build all the back-end code. We created handlers t
+ 
 For our project site, all the views are displayed on one single page. These views are made visible by performing actions.
 The three main views available are Project view, Task view, and Team view. Within the Project view, the user can create 
 projects and add tasks and teammates to the project. The Team view displays all the teammates on the project and
