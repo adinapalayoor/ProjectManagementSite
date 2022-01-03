@@ -1,16 +1,7 @@
-# ProjectManagementSite
-## Overview
+# Project Management Site
 Built a project management site using Java, HTML and JavaScript and connected it all using AWS tools.
 
 ## Back-end
-We used Java to build all the back-end code. We created handlers t
- 
-For our project site, all the views are displayed on one single page. These views are made visible by performing actions.
-The three main views available are Project view, Task view, and Team view. Within the Project view, the user can create 
-projects and add tasks and teammates to the project. The Team view displays all the teammates on the project and
-what task each teammate is working on. Within the Task view, the user can assign a teammate to a task, unnassign a 
-teammate to a task, and mark a task as complete. On the task view, when the user first initially goes to add a task, 
-the user also needs to enter in the task number. This is because it was simpler for the system to ask the user to input the 
-task number rather than internally calculate the task ranks. Another quirk in our project it that it takes a bit of time 
-to refresh the task list and the teammate list. Although these actions may take a little extra time to fully execute, 
-they are still able to successfully complete the request. 
+We used Java to build all the back-end code. We created handlers to allow users to create and delete projects, add and remove tasks, add and remove teammates and numerous other capabilities. These handlers as well as the tests for the handlers are within the "final project" file. Additionally, within the "db" file it contains the classes that allow us to connect the functionality of the handlers into the database itself. Each class includes lines of SQL queries.
+
+## Front-end
