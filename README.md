@@ -8,7 +8,13 @@ We used Java to build all the back-end code. We created handlers to allow users 
 We used html to build the design of our application and JavaScript to connect the functionality of the handlers to buttons and labels.
 
 ## AWS
-Lambda: allow us to do actions within the application and have those actions stored in the cloud
-S3 bucket: uploaded javascript files into this bucket and created a URL from the html files
-API Gateway: deployed the API once all actions had a handler attached
-RDS: allowed us to store all data created and deleted in a database and have that database be stored in the cloud
+AWS was critical in allowing us to interact with our application in real time.
+
+### Lambda
+- allow us to do actions within the application and have those actions stored in the cloud
+### S3 bucket
+- uploaded javascript files into this bucket and created a URL from the html files
+### API Gateway
+- deployed the API once all actions had a handler attached
+### RDS
+- allowed us to store all data created and deleted in a database and have that database be stored in the cloud
